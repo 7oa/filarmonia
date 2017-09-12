@@ -1,0 +1,45 @@
+header.header
+    .header__line1
+        .container
+            .header__wrapper
+                .header__left
+                    a.version(href="#") Версия для слабовидящих
+                .header__center
+                    a.logo(href="/")
+                .header__right
+                    .ss
+                        a.ss__link(href="#")
+                            i.fa.fa-vk
+                        a.ss__link(href="#")
+                            i.fa.fa-instagram
+                        a.ss__link(href="#")
+                            i.fa.fa-odnoklassniki
+                        a.ss__link(href="#")
+                            i.fa.fa-facebook
+    .header__line2
+        .container
+            .header__wrapper2
+                .header__menu
+                    .menu-icon
+                        i.fa.fa-bars
+                    ul.header-menu
+                        each i in nav
+                            +navItem(i.url, i.name, i.parent, activeMenu)
+                .header__ss
+                    .ss
+                        a.ss__link(href="#")
+                            i.fa.fa-vk
+                        a.ss__link(href="#")
+                            i.fa.fa-instagram
+                        a.ss__link(href="#")
+                            i.fa.fa-odnoklassniki
+                        a.ss__link(href="#")
+                            i.fa.fa-facebook
+                .header__search-w
+                    .header__search
+                        a.search-btn(href="#")
+                    .header__lang
+                        .lang
+                            a.lang__link.lang__eng(href="#") eng
+                            span /
+                            a.lang__link.lang__ru(href="#") rus

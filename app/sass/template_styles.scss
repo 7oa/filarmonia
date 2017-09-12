@@ -1,0 +1,25 @@
+@import "core/vars";
+@import "core/mixins";
+@import "core/reset";
+@import "core/fonts";
+@import "core/grid";
+
+@import "plugins/datepicker.min";
+@import "plugins/swiper.min";
+@import "plugins/font-awesome/font-awesome";
+
+@import "core/base";
+@import "core/header";
+@import "core/footer";
+@import "core/images";
+@import "core/buttons";
+
+@import "blocks/header-menu";
+@import "blocks/slider";
+@import "blocks/afisha";
+@import "blocks/banners";
+@import "blocks/datepicker";
+
+@import "pages/index";
+
+@import "core/adaptive";

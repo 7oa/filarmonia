@@ -1,0 +1,21 @@
+.afisha-sidebar{
+  .datepicker{
+	margin: 0 auto;
+	border: none;
+  }
+  .datepicker--nav{
+	border: none;
+  }
+  .datepicker--cell{
+	border-radius: 0;
+  }
+  .datepicker--cell.-current-{
+	border: 1px solid $red-c6;
+	background: transparent;
+	color: $gray-46;
+  }
+  .datepicker--cell.-selected-.-focus-{
+	background: $red-c6;
+	color: $white;
+  }
+}

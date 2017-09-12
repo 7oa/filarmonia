@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: 'OpenSansLight';
+  font-size: 15px;
+}
+.content {
+  flex: 1 0 auto;
+  background-image: url('images/pattern.png');
+}
+a{
+  text-decoration: none;
+}
+input:focus,
+textarea:focus{
+  outline: none;
+}
+textarea{
+  resize: vertical;
+}
+.container{
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  @media screen and (min-width: $w-desktop) {
+	max-width: $w-desktop;
+	margin: 0 auto;
+	padding: 0;
+  }
+}
+h1{
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 30px;
+}
+h2{
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 25px;
+}
+h3{
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 20px;
+}
+h4{
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 18px;
+}
+.workarea{
+
+}

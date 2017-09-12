@@ -1,0 +1,32 @@
+.afisha{
+  @media screen and (min-width: $w-mobile) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	overflow: hidden;
+  }
+  &__item{
+	margin: 0 auto 30px;
+	width: 280px;
+	@media screen and (min-width: $w-mobile) {
+	  margin: 0 10px 30px;
+	  width: 295px;
+	}
+  }
+  &__img{
+	@include bg-img(contain);
+	//background-color: $white;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 10px;
+	@media screen and (min-width: $w-mobile) {
+	  margin-bottom: 20px;
+	  height: 419px;
+	}
+  }
+  &__btn{
+	display: flex;
+	justify-content: space-between;
+  }
+}

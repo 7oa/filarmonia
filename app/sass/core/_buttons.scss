@@ -1,0 +1,38 @@
+.btn{
+  display: inline-block;
+  &_white{
+  	color: $white;
+	font-size: 8px;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	border: 2px solid $white;
+	line-height: 20px;
+	padding: 0 12px;
+	@media screen and (min-width: $w-mobile) {
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  line-height: 51px;
+	  border-width: 3px;
+	  padding: 0 17px;
+	}
+  }
+  &__black{
+	color: $gary-50;
+	font-family: 'OpenSans';
+	font-size: 16px;
+	line-height: 41px;
+	text-transform: uppercase;
+	width: 130px;
+	border: 2px solid $gary-50;
+	text-align: center;
+	transition: .5s;
+	@media screen and (min-width: $w-mobile) {
+	  width: 140px;
+	}
+	&:hover{
+	  color: $white;
+	  background-color: $red-e4;
+	  border-color: $red-e4;
+	}
+  }
+}
