@@ -4,17 +4,17 @@
   //height: 688px;
   background: $gray-19;
   color: $gray-85;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $w-desktop) {
 	height: 265px;
   }
   &__wrapper{
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  display: flex;
 	  justify-content: space-between;
 	}
   }
   &__wrapper2{
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  display: flex;
 	}
   }
@@ -25,14 +25,14 @@
 	margin-bottom: 18px;
 	color: $white;
 	text-align: center;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  text-align: left;
 	}
   }
   &__line1{
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 	padding-bottom: 27px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-bottom: 57px;
 	}
   }
@@ -43,13 +43,13 @@
 	font-size: 14px;
 	line-height: 20px;
 	text-align: center;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  text-align: left;
 	}
   }
   &__logo{
 	padding-top: 31px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-top: 60px;
 	  width: 257px;
 	  flex: 0 0 auto;
@@ -57,14 +57,14 @@
   }
   &__contacts{
 	padding-top: 58px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  flex: 0 0 auto;
 	  width: 272px;
 	}
   }
   &__tel{
 	padding-top: 22px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  order: 1;
 	  flex: 0 0 auto;
 	  padding-top: 59px;
@@ -79,14 +79,14 @@
 		text-decoration: none;
 	  }
 	}
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-top: 59px;
 	  flex: 0 0 auto;
 	}
   }
   &__ss{
 	padding-top: 28px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-top: 19px;
 	  margin-right: 20%;
 	}
@@ -96,7 +96,7 @@
 	font-size: 14px;
 	padding-top: 30px;
 	line-height: 16px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  text-align: left;
 	  padding-top: 20px;
 	}
@@ -116,7 +116,7 @@
 	font-family: 'FontAwesome';
 	font-size: 20px;
 	margin-right: 17px;
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: $w-desktop) {
 	  font-size: 17px;
 	  margin-right: 21px;
 	}

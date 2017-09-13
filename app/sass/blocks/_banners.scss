@@ -1,8 +1,8 @@
 .banners{
   &__link{
 	@include bg-img(cover);
-	width: 227px;
-	height: 105px;
+	width: 280px;
+	height: 130px;
 	color: $white;
 	position: relative;
 	display: flex;
@@ -11,7 +11,12 @@
 	font-size: 20px;
 	font-family: 'OpenSans';
 	font-weight: bold;
-	margin: 0 auto 10px;
+	margin: 0 auto 25px;
+	@media screen and (min-width: $w-desktop) {
+	  width: 227px;
+	  height: 105px;
+	  margin-bottom: 20px;
+	}
 	&:before{
 	  content: '';
 	  opacity: 0.4;

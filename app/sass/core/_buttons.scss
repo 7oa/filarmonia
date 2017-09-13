@@ -8,7 +8,7 @@
 	border: 2px solid $white;
 	line-height: 20px;
 	padding: 0 12px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  text-transform: uppercase;
 	  font-size: 20px;
 	  line-height: 51px;
@@ -26,7 +26,7 @@
 	border: 2px solid $gary-50;
 	text-align: center;
 	transition: .5s;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  width: 140px;
 	}
 	&:hover{

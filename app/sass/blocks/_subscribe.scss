@@ -1,0 +1,52 @@
+.subscribe{
+  max-width: 280px;
+  margin: 0 auto;
+  @media screen and (min-width: $w-desktop) {
+	max-width: 229px;
+  }
+  &__ttl{
+	color: $gray-29;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'OpenSansLight';
+	margin-bottom: 19px;
+	@media screen and (min-width: $w-desktop) {
+	  font-size: 14px;
+	  line-height: 16px;
+	}
+  }
+  &__input{
+	border: 1px solid #cdcbca;
+	height: 31px;
+	box-sizing: border-box;
+	font-family: 'OpenSansLight';
+	font-size: 12px;
+	line-height: 31px;
+	color: $gray-33;
+	transition: .5s;
+	margin-bottom: 10px;
+	background-color: $white;
+	padding: 0 20px;
+	width: 100%;
+	&:focus{
+	  border-color: $red-e1;
+	}
+  }
+  &__submit{
+	border: 2px solid $gary-50;
+	height: 30px;
+	font-family: 'OpenSans';
+	font-size: 12px;
+	line-height: 23px;
+	transition: .5s;
+	background-color: $white;
+	width: 100%;
+	cursor: pointer;
+	color: $gary-50;
+	&:hover{
+	  background-color: $red-e1;
+	  border-color: $red-e1;
+	  color: $white;
+	}
+  }
+}

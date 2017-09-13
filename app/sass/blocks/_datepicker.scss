@@ -2,6 +2,22 @@
   .datepicker{
 	margin: 0 auto;
 	border: none;
+	font-family: 'OpenSansLight';
+	font-size: 12px;
+  }
+  .datepicker--nav-title{
+	font-size: 16px;
+	color: $gray-46;
+	i{
+	  color: $gray-46;
+	}
+  }
+  .datepicker--day-name{
+	color: #c2d1e6;
+	font-size: 12px;
+  }
+  .datepicker--nav-action path{
+	stroke: $gray-46;
   }
   .datepicker--nav{
 	border: none;
@@ -14,7 +30,8 @@
 	background: transparent;
 	color: $gray-46;
   }
-  .datepicker--cell.-selected-.-focus-{
+  .datepicker--cell.-selected-.-focus-,
+  .datepicker--cell.datepicker--cell-day.-selected-{
 	background: $red-c6;
 	color: $white;
   }

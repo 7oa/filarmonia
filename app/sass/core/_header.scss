@@ -1,12 +1,12 @@
 .header {
   background: $white;
   height: 150px;
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-desktop) {
 	height: 215px;
   }
   &__wrapper{
 	display: block;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  display: flex;
 	  justify-content: space-between;
 	  position: relative;
@@ -19,34 +19,34 @@
   &__line1{
 	border-bottom: 1px solid $gray-ee;
 	height: 92px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  height: 140px;
 	}
   }
   &__left{
 	display: none;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  display: block;
 	  padding-top: 50px;
 	}
   }
   &__right{
 	display: none;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  display: block;
 	  padding-top: 59px;
 	}
   }
   &__center{
 	padding-top: 10px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-top: 26px;
 	}
   }
   &__menu{
 	padding-top: 20px;
 	flex: 0 0 auto;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  padding-top: 27px;
 	  flex: 1 1 auto;
 	}
@@ -54,7 +54,7 @@
   &__ss{
 	flex: 1 0 auto;
 	padding-top: 17px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  display: none;
 	}
   }
@@ -62,14 +62,14 @@
 	width: 15px;
 	flex: 0 0 auto;
 	padding-top: 26px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  width: 178px;
 	  display: flex;
 	  margin-left: 53px;
 	}
   }
   &__search{
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  width: 18px;
 	  flex: 0 0 auto;
 	  margin-right: 29px;
@@ -77,7 +77,7 @@
   }
   &__lang{
 	display: none;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  display: block;
 	  height: 14px;
 	  padding-top: 4px;
@@ -95,7 +95,7 @@
   height: 62px;
   display: block;
   margin: 0 auto;
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-desktop) {
 	width: 271px;
 	height: 94px;
 	position: absolute;
@@ -111,7 +111,7 @@
 	font-family: 'FontAwesome';
 	font-size: 20px;
 	margin-right: 17px;
-	@media screen and (min-width: $w-mobile) {
+	@media screen and (min-width: $w-desktop) {
 	  font-size: 25px;
 	  margin-right: 13px;
 	}
@@ -157,14 +157,14 @@
   display: block;
   @include bg-img(contain);
   background-image: url('images/search.png');
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-desktop) {
 	width: 18px;
 	height: 18px;
   }
 }
 .lang{
   display: none;
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-desktop) {
 	display: flex;
   }
   &__link{

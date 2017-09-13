@@ -1,6 +1,6 @@
 .header-menu{
   display: none;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $w-desktop) {
 	display: flex;
 	justify-content: space-between;
   }
@@ -54,7 +54,7 @@
 .menu-icon{
   display: block;
   font-size: 15px;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $w-desktop) {
 	display: none;
   }
 }

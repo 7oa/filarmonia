@@ -45,68 +45,119 @@ block content
             .index-page__afisha
                 .container
                     .index-page__h Афиша ближайших концертов
-                    .row
-                        .col-lg-9.col-xs-12
-                            .afisha
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                                .afisha__item
-                                    .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                    .afisha__btn
-                                        a.btn.btn__black(href="#") Подробнее
-                                        a.btn.btn__black(href="#") Купить
-                        .col-lg-3.col-xs-12
-                            .afisha-sidebar
-                                .afisha-sidebar__calendar
-                                    .datepicker-here
-                                .afisha-sidebar__banners
-                                    .banners
-                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
-                                            .banners__ttl Свадьбы
-                                        a.banners__link(href="#" style="background-image:url('images/TEMP/2.jpg')")
-                                            .banners__ttl Экскурсии<br>и квесты
-                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
-                                            .banners__ttl Аренда зала
-                                .afisha-sidebar__subscribe
-                                    .subscribe
-                                        .subscribe__ttl Оставьте ваш e-mail, чтобы получать наши новости
-                                        form.subscribe__form
-                                            input.subscribe__input(type="text" placeholder="Ваше ФИО")
-                                            input.subscribe__input(type="text" placeholder="Ваш E-mail")
-                                            input.subscribe__submit(type="submit" value="Подписаться")
-
-
+                    .afisha-w
+                        .afisha
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                .afisha__btn
+                                    a.btn.btn__black(href="#") Подробнее
+                                    a.btn.btn__black(href="#") Купить
+                        //end .afisha
+                        .afisha-sidebar
+                            .afisha-sidebar__calendar
+                                .datepicker-here
+                            .afisha-sidebar__banners
+                                .banners
+                                    a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                        .banners__ttl Свадьбы
+                                    a.banners__link(href="#" style="background-image:url('images/TEMP/2.jpg')")
+                                        .banners__ttl Экскурсии<br>и квесты
+                                    a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                        .banners__ttl Аренда зала
+                            .afisha-sidebar__subscribe
+                                .subscribe
+                                    .subscribe__ttl Оставьте ваш e-mail, чтобы получать наши новости
+                                    form.subscribe__form
+                                        input.subscribe__input(type="text" placeholder="Ваше ФИО")
+                                        input.subscribe__input(type="text" placeholder="Ваш E-mail")
+                                        input.subscribe__submit(type="submit" value="Подписаться")
+                        //end .afisha-sidebar
+                    //end .afisha-w
             //end .index-page__afisha
             .index-page__news
                 .container
                     .index-page__h Новости
+                    .news-slider-w
+                        .news-slider
+                            .swiper-wrapper
+                                - for (var i=0; i<2; i++)
+                                    .swiper-slide
+                                        .news-prev.news-prev_index
+                                            .news-prev__img(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                            .news-prev__ttl В камерном зале выступят выдающиеся пианисты
+                                            .news-prev__date 21 сентября, 2017 год
+                                            .news-prev__prev.
+                                                26 июня в 16:30 в Камерном зале Поморской филармонии выступят виртуозные пианисты: лауреат международного конкурса имени П.И.Чайковского
+                                            a.news-prev__btn(href="#") Подробнее
+                                        //end .news-prev
+                                    .swiper-slide
+                                        .news-prev.news-prev_index
+                                            .news-prev__img(href="#" style="background-image:url('images/TEMP/2.jpg')")
+                                            .news-prev__ttl В камерном зале выступят выдающиеся пианисты
+                                            .news-prev__date 21 сентября, 2017 год
+                                            .news-prev__prev.
+                                                26 июня в 16:30 в Камерном зале Поморской филармонии выступят виртуозные пианисты: лауреат международного конкурса имени П.И.Чайковского
+                                            a.news-prev__btn(href="#") Подробнее
+                                        //end .news-prev
+                                    .swiper-slide
+                                        .news-prev.news-prev_index
+                                            .news-prev__img(href="#" style="background-image:url('images/TEMP/3.jpg')")
+                                            .news-prev__ttl В камерном зале выступят выдающиеся пианисты
+                                            .news-prev__date 21 сентября, 2017 год
+                                            .news-prev__prev.
+                                                26 июня в 16:30 в Камерном зале Поморской филармонии выступят виртуозные пианисты: лауреат международного конкурса имени П.И.Чайковского
+                                            a.news-prev__btn(href="#") Подробнее
+                                        //end .news-prev
+                        //end .news-slider
+                        .news-slider__prev
+                            i.fa.fa-angle-left
+                        .news-slider__next
+                            i.fa.fa-angle-right
+                    //end .news-slider-w
             //end .index-page__news
             .index-page__gallery
                 .container
-                    .index-page__h Фотогалерея
+                    .gallery-w
+                        .prev-gallery
+                            .index-page__h Фотогалерея
+                            .prev-gallery__w
+                                - for (var i=0; i<2; i++)
+                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/2.jpg')")
+                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/3.jpg')")
+                        //end .prev-gallery
+                        .prev-video
+                            .index-page__h Видео
+                            .prev-video__w
+                                a.prev-video__item(href="#" style="background-image:url('images/TEMP/4.jpg')")
+                                    i.fa.fa-play
+                        //end .prev-video
+                    //end .gallery-w
             //end .index-page__gallery
         //end .index-page
     //end workarea
