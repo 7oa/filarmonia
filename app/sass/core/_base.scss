@@ -8,6 +8,7 @@ body {
   height: 100%;
   font-family: 'OpenSansLight';
   font-size: 15px;
+  min-width: 320px;
 }
 .content {
   flex: 1 0 auto;
@@ -58,9 +59,9 @@ h4{
 }
 .page{
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 57px;
   @media screen and (min-width: $w-desktop) {
-	padding-top: 50px;
+	padding-top: 46px;
   }
 }
 .page-header{
@@ -68,7 +69,8 @@ h4{
   @media screen and (min-width: $w-desktop) {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 60px;
+	align-items: center;
+	margin-bottom: 56px;
   }
   &__ttl{
 	margin-bottom: 26px;
@@ -77,6 +79,5 @@ h4{
 	}
   }
   &__breadcrumbs{
-
   }
 }

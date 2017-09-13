@@ -1,10 +1,10 @@
 .afisha{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
   @media screen and (min-width: $w-desktop) {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	margin: 0 -10px;
-	overflow: hidden;
   }
   &__item{
 	margin: 0 auto 30px;

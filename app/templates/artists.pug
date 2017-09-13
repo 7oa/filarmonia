@@ -1,0 +1,35 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Артисты';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .container
+            .artists-page
+                .page-header
+                    .page-header__ttl
+                        h1=activeMenu
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#")=activeMenu
+                //end .page-header
+        .artists-w
+            .container
+                .artists
+                    - for (var i=0; i<5; i++)
+                        .artists__item
+                            .artists__img(style="background-image:url(https://unsplash.it/200/300?image=1"+i+")")
+                            .artists__name Лариса Спиранова
+                        .artists__item
+                            .artists__img(style="background-image:url(https://unsplash.it/200/300?image=2"+i+")")
+                            .artists__name Ирина Хайретдинова
+                //end .artists
+        //end .artists-w
+    //end workarea
