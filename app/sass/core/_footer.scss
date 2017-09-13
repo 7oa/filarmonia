@@ -38,6 +38,9 @@
   }
   &__line2{
 	padding-bottom: 30px;
+	@media screen and (min-width: $w-desktop) {
+	  padding-bottom: 0;
+	}
   }
   &__txt{
 	font-size: 14px;

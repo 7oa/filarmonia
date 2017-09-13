@@ -1,0 +1,37 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Фестивали';
+
+block title
+    title=activeMenu
+
+block content
+    //workarea
+    .workarea
+        .container
+            .page
+                .page-header
+                    .page-header__ttl
+                        h1=activeMenu
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#")=activeMenu
+                //end .page-header
+                .page-body
+                    .afisha
+                        - for (var i=0; i<4; i++)
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                .afisha__btn-one
+                                    a.btn.btn__black(href="#") Подробнее
+                            .afisha__item
+                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                .afisha__btn-one
+                                    a.btn.btn__black(href="#") Подробнее
+                //end .page-body
+            //end .page
+    //end workarea

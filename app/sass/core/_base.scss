@@ -36,7 +36,10 @@ textarea{
 h1{
   font-family: 'OpenSans';
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
+  @media screen and (min-width: $w-desktop) {
+	font-size: 30px;
+  }
 }
 h2{
   font-family: 'OpenSans';
@@ -53,6 +56,27 @@ h4{
   font-weight: bold;
   font-size: 18px;
 }
-.workarea{
+.page{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $w-desktop) {
+	padding-top: 50px;
+  }
+}
+.page-header{
+  margin-bottom: 30px;
+  @media screen and (min-width: $w-desktop) {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+  }
+  &__ttl{
+	margin-bottom: 26px;
+	@media screen and (min-width: $w-desktop) {
+	  margin-bottom: 0;
+	}
+  }
+  &__breadcrumbs{
 
+  }
 }

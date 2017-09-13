@@ -4,7 +4,7 @@ append sharedVars
     - var activeMenu = 'Главная';
 
 block title
-    title Главная
+    title=activeMenu
 
 block content
     //workarea
@@ -47,36 +47,21 @@ block content
                     .index-page__h Афиша ближайших концертов
                     .afisha-w
                         .afisha
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                .afisha__btn
-                                    a.btn.btn__black(href="#") Подробнее
-                                    a.btn.btn__black(href="#") Купить
+                            - for (var i=0; i<3; i++)
+                                .afisha__item
+                                    .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                    .afisha__btn-w
+                                        .afisha__btn
+                                            a.btn.btn__black(href="#") Подробнее
+                                        .afisha__btn
+                                            a.btn.btn__black(href="#") Купить
+                                .afisha__item
+                                    .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                    .afisha__btn-w
+                                        .afisha__btn
+                                            a.btn.btn__black(href="#") Подробнее
+                                        .afisha__btn
+                                            a.btn.btn__black(href="#") Купить
                         //end .afisha
                         .afisha-sidebar
                             .afisha-sidebar__calendar
