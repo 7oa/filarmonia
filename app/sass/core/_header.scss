@@ -46,6 +46,7 @@
   &__menu{
 	padding-top: 20px;
 	flex: 0 0 auto;
+	position: relative;
 	@media screen and (min-width: $w-desktop) {
 	  padding-top: 27px;
 	  flex: 1 1 auto;

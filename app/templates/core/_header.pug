@@ -20,9 +20,9 @@ header.header
         .container
             .header__wrapper2
                 .header__menu
-                    .menu-icon
+                    .menu-icon.js-menu-btn
                         i.fa.fa-bars
-                    ul.header-menu
+                    ul.header-menu.js-menu
                         each i in nav
                             +navItem(i.url, i.name, i.parent, activeMenu)
                 .header__ss

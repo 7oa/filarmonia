@@ -1,0 +1,27 @@
+.contacts{
+  @media screen and (min-width: $w-desktop) {
+	display: flex;
+  }
+  &__txt{
+	font-size: 14px;
+	line-height: 22px;
+	font-family: 'OpenSansLight';
+	margin-bottom: 40px;
+	@media screen and (min-width: $w-desktop) {
+	  font-size: 16px;
+	  margin-bottom: 50px;
+	}
+  }
+  &__sidebar{
+	display: none;
+	@media screen and (min-width: $w-desktop) {
+	  display: block;
+	  width: 295px;
+	  margin-left: 20px;
+	  flex: 0 0 auto;
+	}
+  }
+  &__body{
+	flex: 0 1 auto;
+  }
+}

@@ -1,7 +1,7 @@
 extends core/_template
 
 append sharedVars
-    - var activeMenu = 'Фестивали';
+    - var activeMenu = 'Видео';
 
 block title
     title=activeMenu
@@ -22,16 +22,11 @@ block content
                             span.breadcrumbs__item(href="#")=activeMenu
                 //end .page-header
                 .page-body
-                    .afisha
-                        - for (var i=0; i<4; i++)
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
-                                .afisha__btn-one
-                                    a.btn.btn_black(href="#") Подробнее
-                            .afisha__item
-                                .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
-                                .afisha__btn-one
-                                    a.btn.btn_black(href="#") Подробнее
+                    .albums
+                        - for (var i=0; i<8; i++)
+                            a.albums__item.albums__item_video(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0" data-fancybox="gallery" style="background-image:url(https://unsplash.it/500/500?image=101" + i + ")")
+                                .albums__ttl Название альбома
+                    //end .albums
                 //end .page-body
             //end .page
     //end workarea

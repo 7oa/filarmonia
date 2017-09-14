@@ -7,6 +7,7 @@
 @import "plugins/datepicker.min";
 @import "plugins/swiper.min";
 @import "plugins/font-awesome/font-awesome";
+@import "plugins/jquery.fancybox.min";
 
 @import "core/base";
 @import "core/header";
@@ -23,6 +24,10 @@
 @import "blocks/news-prev";
 @import "blocks/breadcrumbs";
 @import "blocks/artists";
+@import "blocks/detail";
+@import "blocks/albums";
+@import "blocks/contacts";
+@import "blocks/map";
 
 @import "pages/index";
 

@@ -1,12 +1,12 @@
 - var nav = [{url: '/', name: 'Главная'}, {url: 'afisha.html', name: 'Афиша'}, {url: 'news.html', name: 'Новости'}, {url: 'artists.html', name: 'Артисты'}, {url: 'abonements.html', name: 'Абонементы'}, {url: 'festivals.html', name: 'Фестивали', parent: 'y'}, {url: 'about.html', name: 'О филармонии', parent: 'y'}, {url: 'media.html', name: 'Медиа', parent: 'y'}, {url: 'contacts.html', name: 'Контакты'}];
-- var child = [{url: '#', name: 'Фестивали 1', parent: 'Фестивали'},{url: '#', name: 'Фестивали 2', parent: 'Фестивали'},{url: '#', name: 'История', parent: 'О филармонии'},{url: '#', name: 'Услуги', parent: 'О филармонии'},{url: '#', name: 'Документы', parent: 'О филармонии'},{url: '#', name: 'Фотогаллерея', parent: 'Медиа'},{url: '#', name: 'Видеогаллерея', parent: 'Медиа'}]
+- var child = [{url: '#', name: 'Фестивали 1', parent: 'Фестивали'},{url: '#', name: 'Фестивали 2', parent: 'Фестивали'},{url: '#', name: 'История', parent: 'О филармонии'},{url: '#', name: 'Услуги', parent: 'О филармонии'},{url: '#', name: 'Документы', parent: 'О филармонии'},{url: 'foto.html', name: 'Фотогаллерея', parent: 'Медиа'},{url: 'video.html', name: 'Видеогаллерея', parent: 'Медиа'}]
 
 mixin navItem(url, name, parent, current)
     li.header-menu__items
-        a.header-menu__links(class=name==current ? 'header-menu__links_active' : '', href=url, title=name)= name
+        a.header-menu__links.js-menu-link(class=name==current ? 'header-menu__links_active' : '', href=url, title=name)= name
         if parent=='y'
             i.fa.fa-angle-down
-            .header-menu__child-w
+            .header-menu__child-w.js-menu-child
                 ul.header-menu__child
                     each item in child
                         if item.parent==name

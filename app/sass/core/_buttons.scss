@@ -16,7 +16,7 @@
 	  padding: 0 17px;
 	}
   }
-  &__black{
+  &_black{
 	color: $gary-50;
 	font-family: 'OpenSans';
 	font-size: 16px;
@@ -32,5 +32,15 @@
 	  background-color: $red-e4;
 	  border-color: $red-e4;
 	}
+  }
+  &_pink{
+	font-family: 'OpenSans';
+	font-size: 16px;
+	color: $white;
+	text-transform: uppercase;
+	height: 46px;
+	line-height: 46px;
+	padding: 0 40px;
+	background-color: $red-ca;
   }
 }

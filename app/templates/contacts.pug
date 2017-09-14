@@ -1,0 +1,86 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Контакты';
+
+block title
+    title=activeMenu
+
+block content
+    //workarea
+    .workarea
+        .container
+            .page
+                .page-header
+                    .page-header__ttl
+                        h1=activeMenu
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#")=activeMenu
+                //end .page-header
+                .page-body
+                    .contacts
+                        .contacts__body
+                            .contacts__txt.
+                                Остается открытым вопрос относительно причин чего-нибудь, знание которых дало бы представление о чем-нибудь еще. Автор упоминает, что все описанные штуки могут быть использованы для изучения тех или иных других штук.
+                                Автор в своей работе осуществил подробный анализ какой-нибудь полезной штуки. Низкий уровень какой-то технологии, в частности штуковины, рассмотренной в работе, на предприятиях определенного типа отрицательно сказывается на развитии всей отрасли. Вместе с этим, считаю важным отметить, что некоторое замечание.
+                            .map
+                                .map__txt
+                                    .map__txt-w
+                                        .map__ttl Камерный зал
+                                        .map__addr.
+                                            <span>Адрес:</span> г. Архангельск, ул. Карла Маркса, 3;
+                                            <span>Режим работы кассы:</span> Вт-Вс с 13:00-19:00
+                                            без перерыва на обед Пн-выходной
+                                            <span>Телефон:</span> 20-80-66 (касса)
+                                .map__map(style="background-image:url('images/map1.png')")
+                            //end .map
+                            .map
+                                .map__txt
+                                    .map__txt-w
+                                        .map__ttl Касса в здании областного  Собрания депутатов
+                                        .map__addr.
+                                            <span>Адрес:</span> г. Архангельск, ул. Карла Маркса, 3;
+                                            <span>Телефон:</span> 215-669
+                                            <span>Режим работы:</span> Пн-Сб с 12:00-18:00,
+                                            без перыва на обед
+                                .map__map(style="background-image:url('images/map2.png')")
+                            //end .map
+                            .map
+                                .map__txt
+                                    .map__txt-w
+                                        .map__ttl Администрация
+                                        .map__addr.
+                                            <span>Адрес:</span> 163000, г. Архангельск,
+                                            Банковский пер., 3.
+                                .map__map(style="background-image:url('images/map3.png')")
+                            //end .map
+                        //end .contacts__body
+                        .contacts__sidebar
+                            .afisha-sidebar
+                                .afisha-sidebar__calendar
+                                    .datepicker-here
+                                .afisha-sidebar__banners
+                                    .banners
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                            .banners__ttl Свадьбы
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/2.jpg')")
+                                            .banners__ttl Экскурсии<br>и квесты
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                            .banners__ttl Аренда зала
+                                .afisha-sidebar__subscribe
+                                    .subscribe
+                                        .subscribe__ttl Оставьте ваш e-mail, чтобы получать наши новости
+                                        form.subscribe__form
+                                            input.subscribe__input(type="text" placeholder="Ваше ФИО")
+                                            input.subscribe__input(type="text" placeholder="Ваш E-mail")
+                                            input.subscribe__submit(type="submit" value="Подписаться")
+                            //end .afisha-sidebar
+                        //end .contacts__sidebar
+                    //end .contacts
+                //end .page-body
+            //end .page
+    //end workarea

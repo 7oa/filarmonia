@@ -16,4 +16,20 @@ $(document).ready(function() {
 			preventClicksPropagation: false
 		});
 	}
+	$(".js-menu-link").click(function(){
+		var all = $(".js-menu-child");
+		var child = $(this).parent().find(".js-menu-child");
+		if(child.hasClass("open")){
+			child.removeClass("open").slideUp();
+		}
+		else{
+			all.removeClass("open").slideUp();
+			child.removeClass("open").slideUp();
+			child.addClass("open").slideDown();
+		}
+		return false;
+	});
+	$('.js-menu-btn').click(function(){
+		$('.js-menu').slideToggle();
+	});
 });

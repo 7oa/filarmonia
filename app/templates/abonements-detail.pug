@@ -1,0 +1,45 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Фестивали';
+
+block title
+    title Детальная страница абонементы
+
+block content
+    //workarea
+    .workarea
+        .container
+            .page
+                .page-header
+                    .page-header__ttl
+                        h1 Детальная страница абонементы
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#") Детальная страница абонементы
+                //end .page-header
+                .page-body
+                    .detail
+                        .detail__img(style="background-image:url('https://unsplash.it/370/500/?random')")
+                        .detail__content
+                            .detail__ttl Описание
+                            .detail__text
+                                p Вчера в Камерном зале состоялся детский благотворительный концерт артистов
+                                 |  Поморской филармонии.Он прошёл в рамках Большого Пасхального фестиваля, собрав
+                                 |  более 300 детей и взрослых! На музыкальный праздник пришли ребята
+                                 |  из коррекционных школ Архангельска, Новодвинска и Северодвинска, дети
+                                 |  из ногодетных семей и церковных приходов, из областного центра помощи детям
+                                 |  «Лучик» и Областного детского онкологического отделения.
+                                p В зале царила атмосфера действительно пасхальной радости и невероятной искренности
+                                 |  – обязательно посмотрите фотографии с праздника, вглядитесь в эти лица! Многим
+                                 |  ребятам нелегко приезжать на концерты, но они мужественно находят силы для встреч
+                                 |  с волшебной музыкой, для улыбок и общения друг с другом.
+                            .detail__btn
+                                a.btn.btn_pink(href="#") Купить
+                    //end .detail
+                //end .page-body
+            //end .page
+    //end workarea

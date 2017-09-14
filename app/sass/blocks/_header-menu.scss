@@ -1,49 +1,93 @@
 .header-menu{
   display: none;
+  //display: block;
+  position: absolute;
+  background-color: $black;
+  z-index: 9;
+  color: white;
+  width: 280px;
+  padding: 23px 38px 20px;
+  box-sizing: border-box;
+  left: -20px;
+  top: 57px;
   @media screen and (min-width: $w-desktop) {
-	display: flex;
+	position: relative;
+	display: flex !important;
 	justify-content: space-between;
+	width: auto;
+	padding: 0;
+	background-color: $white;
+	top: auto;
+	left: auto;
   }
   &__child-w{
 	display: none;
-	position: absolute;
-	top: 46px;
-	left: -15px;
-	background-color: $white;
-	border-top: 2px solid $red-c8;
+	//display: block;
+	padding-left: 17px;
+	padding-top: 15px;
+	@media screen and (min-width: $w-desktop) {
+	  position: absolute;
+	  top: 46px;
+	  left: 50%;
+	  background-color: $white;
+	  border-top: 2px solid $red-c8;
+	  z-index: 9;
+	  padding-left: 0;
+	  padding-top: 0;
+	  width: 200px;
+	  margin-left: -100px;
+	}
   }
   &__child-li{
-	border-bottom: 1px solid $gray-ee;
-	text-align: center;
-	padding: 20px 35px;
+	margin-bottom: 15px;
+	@media screen and (min-width: $w-desktop) {
+	  border-bottom: 1px solid $gray-ee;
+	  text-align: center;
+	  padding: 20px 35px;
+	  margin-bottom: 0;
+	}
   }
   &__child-a{
 	font-size: 16px;
-	color: $gray-29;
+	color: $white;
 	transition: .5s;
+	@media screen and (min-width: $w-desktop) {
+	  color: $gray-29;
+	}
 	&:hover,
 	&_active{
 	  color: $red-e1;
 	}
   }
   &__items{
-	font-size: 16px;
+	font-size: 18px;
 	white-space: nowrap;
 	position: relative;
-	height: 47px;
+	margin-bottom: 32px;
+	color: $white;
+	@media screen and (min-width: $w-desktop) {
+	  font-size: 16px;
+	  height: 47px;
+	  margin-bottom: 0;
+	  color: $gray-29;
+	}
 	.fa{
 	  margin-left: 6px;
 	}
-	&:hover{
+	/*&:hover{
 	  .header-menu__child-w{
 		display: block;
 	  }
-	}
+	}*/
   }
   &__links{
-	font-size: 16px;
-	color: $gray-29;
+	font-size: 18px;
+	color: $white;
 	transition: .5s;
+	@media screen and (min-width: $w-desktop) {
+	  color: $gray-29;
+	  font-size: 16px;
+	}
 	&:hover,
 	&_active{
 	  color: $red-e1;
@@ -54,6 +98,7 @@
 .menu-icon{
   display: block;
   font-size: 15px;
+  cursor: pointer;
   @media screen and (min-width: $w-desktop) {
 	display: none;
   }

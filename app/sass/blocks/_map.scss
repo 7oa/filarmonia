@@ -1,0 +1,49 @@
+.map{
+  background-color: $white;
+  margin: 0 -20px 30px;
+  @media screen and (min-width: $w-desktop) {
+	margin: 0 0 30px;
+	display: flex;
+  }
+  &__txt-w{
+	padding: 0 20px;
+	@media screen and (min-width: $w-desktop) {
+	  padding: 0 60px;
+	}
+  }
+  &__txt{
+	flex: 0 1 auto;
+	text-align: center;
+	font-family: 'OpenSansLight';
+	color: $gray-0f;
+	height: 190px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media screen and (min-width: $w-desktop) {
+	  height: 310px;
+	}
+  }
+  &__ttl{
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 20px;
+  }
+  &__addr{
+	font-size: 14px;
+	line-height: 16px;
+	span{
+		color: $gray-71;
+	}
+  }
+  &__map{
+	width: 100%;
+	@include bg-img(cover);
+	height: 190px;
+	@media screen and (min-width: $w-desktop) {
+	  width: 525px;
+	  flex: 0 0 auto;
+	  height: auto;
+	}
+  }
+}
