@@ -1,0 +1,83 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новость';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .container
+            .page
+                .page-body
+                    .detail-news
+                        .detail-news__content
+                            .detail-news__ttl
+                                h1 Детский благотворительный концерт состоялся в Камерном зале
+                            .detail-news__date 21 сентября, 2017 год
+                            .detail-news__img(style="background-image:url(https://unsplash.it/2000/3000)")
+                            .detail-news__txt
+                                p.
+                                    Вчера в Камерном зале состоялся детский благотворительный концерт артистов Поморской филармонии.
+                                    Он прошёл в рамках Большого Пасхального фестиваля, собрав более 300 детей и взрослых! На музыкальный
+                                    праздник пришли ребята из коррекционных школ Архангельска, Новодвинска и Северодвинска, дети из
+                                    ногодетных семей и церковных приходов, из областного центра помощи детям «Лучик» и Областного детского
+                                    онкологического отделения.
+                                p.
+                                    Праздник состоялся благодаря помощи спонсоров, волонтёров и, конечно, зрителей Поморской филармонии,
+                                    которые приобретали билеты на концерт и оставляли в кассе для юных слушателей. Помимо музыки её маленьких
+                                    ценителей ожидали подарки, заботливо приготовленные специально для них. Мы от души благодарим каждого,
+                                    кто поучаствовал в организации этого замечательного концерта!Темой встречи стали отражения.
+                                    Это не только отражения на водной глади или в зеркале, но и отражения в каждом музыкальном произведении
+                                    мироощущения его автора.
+                            .detail-news__photos
+                                - for (var i=0; i<10; i++)
+                                    a.photo(href="https://unsplash.it/500/500?image=11"+i data-fancybox="gallery" style="background-image:url(https://unsplash.it/500/500?image=11"+i+")")
+                            .detail-news__albums
+                                .albums
+                                    a.albums__item.albums__item(href="#" style="background-image:url(https://unsplash.it/500)")
+                                        .albums__ttl Название фотоальбома
+                                    a.albums__item.albums__item(href="#" style="background-image:url(https://unsplash.it/500)")
+                                        .albums__ttl Название видеоальбома
+
+                        //end .detail-news__content
+                        .detail-news__sidebar
+                            .afisha-sidebar
+                                .afisha-sidebar__calendar
+                                    .datepicker-here
+                                .afisha-sidebar__banners
+                                    .banners
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                            .banners__ttl Свадьбы
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/2.jpg')")
+                                            .banners__ttl Экскурсии<br>и квесты
+                                        a.banners__link(href="#" style="background-image:url('images/TEMP/1.jpg')")
+                                            .banners__ttl Аренда зала
+                                .afisha-sidebar__subscribe
+                                    .subscribe
+                                        .subscribe__ttl Оставьте ваш e-mail, чтобы получать наши новости
+                                        form.subscribe__form
+                                            input.subscribe__input(type="text" placeholder="Ваше ФИО")
+                                            input.subscribe__input(type="text" placeholder="Ваш E-mail")
+                                            input.subscribe__submit(type="submit" value="Подписаться")
+                            //end .afisha-sidebar
+                        //end .detail-news__sidebar
+                    //end .detail-news
+                    .other-news
+                        .other-news__ttl Другие новости
+                        .other-news__list
+                            - for (var i=0; i<3; i++)
+                                .news-prev
+                                    .news-prev__img(href="#" style="background-image:url(https://unsplash.it/500/500?image=101"+i+")")
+                                    .news-prev__body
+                                        .news-prev__ttl В камерном зале выступят выдающиеся пианисты
+                                        .news-prev__date 21 сентября, 2017 год
+                                        .news-prev__prev.
+                                            26 июня в 16:30 в Камерном зале Поморской филармонии выступят виртуозные пианисты: лауреат международного конкурса имени П.И.Чайковского
+                                        a.news-prev__btn(href="#") Подробнее
+                                //end .news-prev
+                    //.other-news
+                //end .page-body
+            //end .page
+    //end workarea

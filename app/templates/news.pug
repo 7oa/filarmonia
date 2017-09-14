@@ -1,0 +1,27 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+
+block title
+    title=activeMenu
+
+block content
+    .workarea
+        .container
+            .page
+                .page-header
+                    .page-header__ttl
+                        h1=activeMenu
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#")=activeMenu
+                //end .page-header
+                .page-body
+
+                //end .page-body
+            //end .page
+    //end workarea

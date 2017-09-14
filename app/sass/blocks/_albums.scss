@@ -27,7 +27,6 @@
 	  opacity: .4;
 	}
 	&:after{
-	  content:'';
 	  position: absolute;
 	  top: 0;
 	  bottom: 0;
@@ -44,12 +43,14 @@
 	}
 	&_foto{
 	  &:after{
+		content:'';
 		background-image: url('images/zoom.png');
 		background-size: 36px 37px;
 	  }
 	}
 	&_video{
 	  &:after{
+		content:'';
 		background-image: url('images/play.png');
 		background-size: 29px 30px;
 	  }

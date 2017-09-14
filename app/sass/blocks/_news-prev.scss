@@ -1,13 +1,10 @@
 .news-prev{
   width: 280px;
   background-color: $white;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   @media screen and (min-width: $w-desktop) {
 	width: 298px;
-	margin-bottom: 0;
-  }
-  &_index{
-	background-color: transparent;
+	margin: 0 10px 30px;
   }
   &__img{
 	@include bg-img(cover);
@@ -50,6 +47,16 @@
 	  color: $white;
 	  background-color: $red-e4;
 	  border-color: $red-e4;
+	}
+  }
+  &__body{
+	padding: 0 20px 25px;
+  }
+  &_index{
+	background-color: transparent;
+	margin: 0 0 30px;
+	@media screen and (min-width: $w-desktop) {
+	  margin-bottom: 0;
 	}
   }
 }

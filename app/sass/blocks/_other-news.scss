@@ -1,0 +1,28 @@
+.other-news{
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 945px) {
+	width: 945px;
+  }
+  &__ttl{
+	text-align: center;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+	@media screen and (min-width: $w-desktop) {
+	  font-size: 30px;
+	  line-height: 35px;
+	  margin-bottom: 55px;
+	}
+  }
+  &__list{
+	width: 280px;
+	margin: 0 auto;
+	@media screen and (min-width: 945px) {
+	  display: flex;
+	}
+  }
+}

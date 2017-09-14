@@ -38,8 +38,10 @@ h1{
   font-family: 'OpenSans';
   font-weight: bold;
   font-size: 18px;
+  line-height: 20px;
   @media screen and (min-width: $w-desktop) {
 	font-size: 30px;
+	line-height: 35px;
   }
 }
 h2{

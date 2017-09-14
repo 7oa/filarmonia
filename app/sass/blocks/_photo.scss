@@ -1,0 +1,11 @@
+.photo{
+  @include bg-img(cover);
+  width: 280px;
+  height: 177px;
+  display: block;
+  margin: 0 auto 12px;
+  @media screen and (min-width: $w-desktop) {
+	width: 267px;
+	margin: 0 6px 12px;
+  }
+}
