@@ -1,0 +1,37 @@
+.select{
+  position: relative;
+  width: 86px;
+  height: 29px;
+  cursor: pointer;
+  font-family: 'OpenSansLight';
+  font-size: 13px;
+  line-height: 29px;
+  text-align: center;
+  background-color: $white;
+  @media screen and (min-width: $w-desktop) {
+	width: 92px;
+  }
+  &__ul{
+	display: none;
+	position: absolute;
+	top: 29px;
+	left: 0px;
+	background: #fff;
+	z-index: 99;
+	width: 100%;
+	border-top: 2px solid #c85374;
+  }
+  &__li{
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	font-family: 'OpenSansLight';
+	font-size: 13px;
+	cursor: pointer;
+	&:hover{
+	  color: $red-e1;
+	}
+  }
+  i.fa{
+	margin-left: 6px;
+  }
+}

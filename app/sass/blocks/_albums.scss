@@ -1,7 +1,10 @@
 .albums{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin: 0;
+  @media screen and (min-width: $w-desktop) {
+	margin: 0 -10px;
+  }
   &__item{
 	width: 280px;
 	height: 187px;
@@ -10,9 +13,10 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	margin: 0 10px 20px;
+	margin: 0 auto 20px;
 	@media screen and (min-width: $w-desktop) {
 	  width: 295px;
+	  margin: 0 10px 20px;
 	}
 	&:before{
 	  content:'';

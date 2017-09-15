@@ -81,5 +81,59 @@ h4{
 	}
   }
   &__breadcrumbs{
+	flex: 0 1 auto;
+	order: 1;
+	margin-bottom: 30px;
+	@media screen and (min-width: $w-desktop) {
+	  margin-bottom: 0;
+	}
+  }
+  &__fltr{
+	display: flex;
+	flex: 0 0 auto;
+	@media screen and (min-width: $w-desktop) {
+	  justify-content: center;
+	}
+  }
+  &__select{
+	margin-right: 10px;
+  }
+}
+.festival-w{
+
+  color: $gray-48;
+  font-family: 'OpenSansLight';
+  font-size: 15px;
+  line-height: 25px;
+  background-color: $white;
+  margin: 0 -20px 30px;
+  padding: 20px;
+  @media screen and (min-width: $w-desktop) {
+	margin: 0 0 60px;
+	padding: 50px 50px 20px;
+  }
+  img{
+	max-width: 100%;
+	margin-bottom: 20px;
+	@media screen and (min-width: $w-desktop) {
+	  margin-right: 30px;
+	  margin-bottom: 30px;
+	  float: left;
+	}
+  }
+  p{
+	margin-bottom: 30px;
+  }
+}
+.festival-conserts{
+  font-family: 'OpenSans';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $w-desktop) {
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 60px;
   }
 }

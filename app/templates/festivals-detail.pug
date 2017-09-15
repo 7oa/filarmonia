@@ -1,0 +1,142 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Фестивали';
+
+block title
+    title XII Международный фестиваль «Музыкальная коллекция»
+
+block content
+    //workarea
+    .workarea
+        .container
+            .page
+                .page-header
+                    .page-header__ttl
+                        h1 XII Международный фестиваль «Музыкальная коллекция»
+                    .page-header__breadcrumbs
+                        .breadcrumbs
+                            a.breadcrumbs__item(href="#") Главная
+                            span.breadcrumbs__item
+                                i.fa.fa-angle-right
+                            span.breadcrumbs__item(href="#")=activeMenu
+                //end .page-header
+                .page-body
+                    .festival-w
+                        img(src="https://unsplash.it/300")
+                        p.
+                            Название абонемента – призыв Блока: «Всем телом, всем сердцем слушайте музыку революции».
+                            Крупнейшие композиторы и поэты, откликаясь на революционные события, стремились отразить их в своем
+                            творчестве, вступая таким образом в диалог с полным драматизма временем. Порой, увы, в этот диалог
+                            вмешивалась идеология, и это делало еще более значимым поиск новых форм музыкальной и литературной
+                            рефлексии.
+
+                        p.
+                            Постаравшись в равной мере  представить «красное» и «белое» звучание революционной эпохи, мы
+                            предлагаем вам  вслушаться в эту полифонию, эти музыкальные и поэтические отзвуки фатальных явлений
+                            вековой давности.В фокусе абонемента редко исполняемые кантаты Первого фортепианного концерта
+                            Рахманинова, Вторая симфония Постаравшись в равной мере  представить «красное» и «белое» звучание
+                            революционной эпохи, мы предлагаем вам
+                        p.
+                            Откроет фестиваль фортепианный вечер Николая Луганского. 21 мая в Большом зале филармонии он исполнит сочинения Чайковского и Шопена.
+                            Большую серию фестивальных клавирабендов продолжит концерт «Гравитация» (31 мая, Большой зал) фортепианного дуэта Полины Осетинской и Антона Батагова с программой из произведений Пёрселла, Дебюсси, Равеля, Гласса, Лэнга и Батагова. В фестивале также примет участие французский фортепианный дуэт Людмилы Берлинской и Артура Анселя (5 июня, Малый зал). Сольные концерты дадут Мирослав Култышев (22 июня, Малый зал), Валерий Афанасьев (23 июня, Большой зал) и Андрей Коробейников (28 июня, закрытие сезона Малого зала).
+                    .festival-conserts Концерты фестиваля
+                    .afisha-w
+                        .afisha-fltr
+                            .afisha-fltr__select-w
+                                .afisha-fltr__select
+                                    .select.js-select Год
+                                        i.fa.fa-angle-down
+                                        ul.select__ul.js-select-opt
+                                            li.select__li 2015
+                                            li.select__li 2016
+                                            li.select__li 2017
+                                    input.js-select-input(type="hidden")
+                                //end .afisha-fltr__select
+                                .afisha-fltr__select
+                                    .select.js-select Месяц
+                                        i.fa.fa-angle-down
+                                        ul.select__ul.js-select-opt
+                                            li.select__li Январь
+                                            li.select__li Февраль
+                                            li.select__li Март
+                                    input.js-select-input(type="hidden")
+                                //end .afisha-fltr__select
+                                .afisha-fltr__select
+                                    .select.js-select Зал
+                                        i.fa.fa-angle-down
+                                        ul.select__ul.js-select-opt
+                                            li.select__li Зал 1
+                                            li.select__li Зал 2
+                                            li.select__li Зал 3
+                                    input.js-select-input(type="hidden")
+                                //end .afisha-fltr__select
+                            //end .afisha-fltr__select-w
+                            .afisha-fltr__genre.dd
+                                .dd__head.js-dd
+                                    .dd__ico
+                                        i.fa.fa-bolt
+                                    .dd__ttl Жанр
+                                    .dd__arr
+                                        i.fa.fa-angle-down
+                                //end .dd__head
+                                .dd__body.js-dd-body
+                                    .dd__item
+                                        span.js-dd-item.selected <i class="fa fa-times"></i> Вокал
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Гала-концерт
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Детский
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Джаз
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Камерная музыка
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Огран
+                                    .dd__item
+                                        span.js-dd-item <i class="fa fa-times"></i> Оркестр
+                                    input.js-dd-input(type="hidden")
+                                //end .dd__body
+                            //end .afisha-fltr__genre
+                            .afisha-fltr__geo.dd
+                                .dd__head.js-dd
+                                    .dd__ico
+                                        i.fa.fa-map-marker
+                                    .dd__ttl География
+                                    .dd__arr
+                                        i.fa.fa-angle-down
+                                //end .dd__head
+                                .dd__body.js-dd-body
+                                    a.dd__geo(href="#")
+                                        .dd__geo-img(style="background-image:url(images/geo1.png)")
+                                        .dd__geo-ttl Артисты филармонии
+                                    a.dd__geo(href="#")
+                                        .dd__geo-img(style="background-image:url(images/geo2.png)")
+                                        .dd__geo-ttl Российские артисты
+                                    a.dd__geo(href="#")
+                                        .dd__geo-img(style="background-image:url(images/geo3.png)")
+                                        .dd__geo-ttl Зарубежные артисты
+                                //end .dd__body
+                            //end .afisha-fltr__geo
+                        //end .afisha-fltr
+                        .afisha
+                            - for (var i=0; i<6; i++)
+                                .afisha__item
+                                    .afisha__img(style="background-image:url('images/TEMP/a1.jpg')")
+                                    .afisha__btn-w
+                                        .afisha__btn
+                                            a.btn.btn_black(href="#") Подробнее
+                                        .afisha__btn
+                                            a.btn.btn_black(href="#") Купить
+                                .afisha__item
+                                    .afisha__img(style="background-image:url('images/TEMP/a2.jpg')")
+                                    .afisha__btn-w
+                                        .afisha__btn
+                                            a.btn.btn_black(href="#") Подробнее
+                                        .afisha__btn
+                                            a.btn.btn_black(href="#") Купить
+                        //end .afisha
+                    //end .afisha-w
+                //end .page-body
+            //end .page
+    //end workarea

@@ -32,4 +32,25 @@ $(document).ready(function() {
 	$('.js-menu-btn').click(function(){
 		$('.js-menu').slideToggle();
 	});
+
+	$('.js-select').click(function(){
+		$(this).children(".js-select-opt").slideToggle();
+	});
+
+	$('.js-select-opt li').click(function(){
+		var item = $(this).text();
+		$(this).parents('.js-select').next('.js-select-input').val(item);
+	});
+
+	$('.js-dd').click(function(){
+		$(this).next('.js-dd-body').slideToggle();
+	});
+
+	$('.js-dd-item').click(function(){
+		$(this).toggleClass('selected');
+		var option_all = $(this).parents('.js-dd-body').find(".js-dd-item.selected").map(function () {
+			return $(this).text();
+		}).get().join('\n');
+		$(this).parents('.js-dd-body').children('.js-dd-input').val(option_all);
+	});
 });

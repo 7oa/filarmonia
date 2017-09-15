@@ -1,9 +1,9 @@
 .news-prev{
   width: 280px;
   background-color: $white;
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
   @media screen and (min-width: $w-desktop) {
-	width: 298px;
+	width: 295px;
 	margin: 0 10px 30px;
   }
   &__img{

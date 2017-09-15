@@ -19,9 +19,40 @@ block content
                             span.breadcrumbs__item
                                 i.fa.fa-angle-right
                             span.breadcrumbs__item(href="#")=activeMenu
+                    .page-header__fltr
+                        .page-header__select
+                            .select.js-select Год
+                                i.fa.fa-angle-down
+                                ul.select__ul.js-select-opt
+                                    li.select__li 2015
+                                    li.select__li 2016
+                                    li.select__li 2017
+                            input.js-select-input(type="hidden")
+                        //end .page-header__select
+                        .page-header__select
+                            .select.js-select Месяц
+                                i.fa.fa-angle-down
+                                ul.select__ul.js-select-opt
+                                    li.select__li Январь
+                                    li.select__li Февраль
+                                    li.select__li Март
+                            input.js-select-input(type="hidden")
+                        //end .page-header__select
+                    //end .page-header__fltr
                 //end .page-header
                 .page-body
-
+                    .news-list
+                        - for (var i=0; i<8; i++)
+                            .news-prev
+                                .news-prev__img(href="#" style="background-image:url(https://unsplash.it/500/500?image=101" + i + ")")
+                                .news-prev__body
+                                    .news-prev__ttl В камерном зале выступят выдающиеся пианисты
+                                    .news-prev__date 21 сентября, 2017 год
+                                    .news-prev__prev.
+                                        26 июня в 16:30 в Камерном зале Поморской филармонии выступят виртуозные пианисты: лауреат международного конкурса имени П.И.Чайковского
+                                    a.news-prev__btn(href="#") Подробнее
+                            //end .news-prev
+                    //end .news-list
                 //end .page-body
             //end .page
     //end workarea

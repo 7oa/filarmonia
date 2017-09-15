@@ -1,7 +1,7 @@
 .other-news{
   width: 100%;
   margin: 0 auto;
-  @media screen and (min-width: 945px) {
+  @media screen and (min-width: 985px) {
 	width: 945px;
   }
   &__ttl{
@@ -21,8 +21,10 @@
   &__list{
 	width: 280px;
 	margin: 0 auto;
-	@media screen and (min-width: 945px) {
+	@media screen and (min-width: 985px) {
 	  display: flex;
+	  justify-content: space-between;
+	  width: 100%;
 	}
   }
 }
