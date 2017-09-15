@@ -10,10 +10,34 @@
 	@include bg-img(cover);
 	color: $white;
 	height: 100%;
+	position: relative;
+	&:before{
+	  content:'';
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  bottom: 0;
+	  height: 100%;
+	  width: 20px;
+	  background: black;
+	  @media screen and (min-width: $w-desktop) {
+		width: calc((100vw - 1240px) / 2);
+	  }
+	}
+  }
+  &__gradient{
+	background: linear-gradient(90deg, rgb(0, 0, 0) 0%, transparent 100%);
+  }
+  .container{
+	position: relative;
+	height: 100%;
+	display: flex;
   }
   &__txt{
 	width: 162px;
 	padding-top: 36px;
+	height: 100%;
+	background-color: black;
 	@media screen and (min-width: $w-desktop) {
 	  width: 295px;
 	  padding-top: 111px;

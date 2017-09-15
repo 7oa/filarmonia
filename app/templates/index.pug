@@ -25,6 +25,7 @@ block content
                                             по разработке системы обучения
                                         .slider__btn
                                             a.btn.btn_white(href="#") Приобрести билет
+                                    .slider__gradient(style="width:200px;")
                         //end .swiper-slide
                         .swiper-slide
                             .slider__item(style="background-image:url('images/TEMP/1.jpg')")
@@ -38,6 +39,7 @@ block content
                                             по разработке системы обучения
                                         .slider__btn
                                             a.btn.btn_white(href="#") Приобрести билет
+                                    .slider__gradient(style="width:200px;")
                         //end .swiper-slide
                     .slider__pagination
                 //end .slider
@@ -132,14 +134,14 @@ block content
                             .index-page__h Фотогалерея
                             .prev-gallery__w
                                 - for (var i=0; i<2; i++)
-                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/1.jpg')")
-                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/2.jpg')")
-                                    a.prev-gallery__item(href="#" style="background-image:url('images/TEMP/3.jpg')")
+                                    a.prev-gallery__item(href="images/TEMP/1.jpg" data-fancybox="gallery" style="background-image:url('images/TEMP/1.jpg')")
+                                    a.prev-gallery__item(href="images/TEMP/2.jpg" data-fancybox="gallery" style="background-image:url('images/TEMP/2.jpg')")
+                                    a.prev-gallery__item(href="images/TEMP/3.jpg" data-fancybox="gallery" style="background-image:url('images/TEMP/3.jpg')")
                         //end .prev-gallery
                         .prev-video
                             .index-page__h Видео
                             .prev-video__w
-                                a.prev-video__item(href="#" style="background-image:url('images/TEMP/4.jpg')")
+                                a.prev-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&autoplay=1&rel=0&controls=0&showinfo=0" data-fancybox style="background-image:url('images/TEMP/4.jpg')")
                                     i.fa.fa-play
                         //end .prev-video
                     //end .gallery-w

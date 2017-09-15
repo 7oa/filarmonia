@@ -53,4 +53,14 @@ $(document).ready(function() {
 		}).get().join('\n');
 		$(this).parents('.js-dd-body').children('.js-dd-input').val(option_all);
 	});
+
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".js-select-opt");
+		var div2 = $(".js-select");
+		if (!div.is(e.target)
+			&& !div2.is(e.target)
+			&& div.has(e.target).length === 0 && div2.has(e.target).length === 0) {
+			div.slideUp();
+		}
+	});
 });
